@@ -1,4 +1,4 @@
-pub fn run(inp: String) -> i64 {
+pub fn run(inp: &str) -> i64 {
     inp.split("\n\n")
         .map(|x| {
             x.lines()

@@ -1,6 +1,6 @@
 use std::collections::BinaryHeap;
 
-pub fn run(inp: String) -> i64 {
+pub fn run(inp: &str) -> i64 {
     // take and sum top 3 numbers
     BinaryHeap::from_iter(inp.split("\n\n").map(|x| {
         x.lines()
