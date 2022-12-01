@@ -1,8 +1,4 @@
-const day: &str = "01";
-
-pub fn run() -> i64 {
-    let inp = std::fs::read_to_string(format!("input/{}.txt", day)).expect("Error reading input");
-    
+pub fn run(inp: String) -> i64 {
     inp.split("\n\n")
         .map(|x| {
             x.lines()

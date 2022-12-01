@@ -1,10 +1,6 @@
 use std::collections::BinaryHeap;
 
-const day: &str = "01";
-
-pub fn run() -> i64 {
-    let inp = std::fs::read_to_string(format!("input/{}.txt", day)).expect("Error reading input");
-
+pub fn run(inp: String) -> i64 {
     // take and sum top 3 numbers
     BinaryHeap::from_iter(inp.split("\n\n").map(|x| {
         x.lines()

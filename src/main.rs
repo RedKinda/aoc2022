@@ -1,6 +1,9 @@
-mod b01;
-use b01::run;
+mod a01;
+use a01::run;
+const DAY: &str = "01";
 
 fn main() {
-    println!("Result: {}", run());
+    let inp = std::fs::read_to_string(format!("input/{}.txt", DAY)).unwrap();
+    let result = run(inp);
+    println!("Result day {}: {}", DAY, result);
 }
